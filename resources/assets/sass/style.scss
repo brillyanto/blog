@@ -1,0 +1,13 @@
+@import 'compass';
+
+$break-small: 732px;
+$break-medium: 990px;
+$break-large:1200px;
+
+@import 'header';
+
+@import 'body';
+
+@import 'footer';
+
+@import 'homepage';
