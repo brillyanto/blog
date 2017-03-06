@@ -23,3 +23,7 @@ Route::post('/posts', 'PostController@store');
 
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
