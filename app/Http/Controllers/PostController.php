@@ -29,7 +29,6 @@ class PostController extends Controller
             'body' => 'required',
         ]);
 
-
         $post = new Post;
         $post->title = $request->get('title');
         $post->content = $request->get('body');
