@@ -1,8 +1,8 @@
 @extends('master')
 
 @section('content')
-   <h1>{{ $post->title }}</h1>
-   {{ $post->date() }} <br>
+   <h1>{{ $post->title }}</h1> 
+   {{ $post->user->name }} on {{ $post->date() }} <br>
    {{ $post->content }}
    @if(count($post->comments))
    <ul class="list-group">

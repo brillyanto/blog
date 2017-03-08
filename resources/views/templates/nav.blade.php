@@ -58,8 +58,15 @@
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://builtwithbootstrap.com/" target="_blank">Built With Bootstrap</a></li>
-            <li><a href="https://wrapbootstrap.com/?ref=bsw" target="_blank">WrapBootstrap</a></li>
+            @if(Auth::check())
+              <li><a href="\posts">{{Auth::user()->name}}</a></li>
+              <li><a href="\posts\create">Post</a></li>
+              <li><a href="\logout">Logout</a></li>
+            @else
+              <li><a href="\login">Login</a></li>
+              <li><a href="\register">Register</a></li>
+            @endif
+            
           </ul>
 
         </div>
